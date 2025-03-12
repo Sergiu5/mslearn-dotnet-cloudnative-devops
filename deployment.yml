@@ -11,6 +11,8 @@ spec:
       labels:
         app: storeimage
     spec:
+      imagePullSecrets:   
+        - name: acr-secret
       nodeSelector:
         kubernetes.io/os: linux
       containers:
